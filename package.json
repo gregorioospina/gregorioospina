@@ -1,7 +1,7 @@
 {
   "name": "ppersonal",
   "version": "0.1.0",
-  "homepage": "http://gregorioospina.github.io/personal_page",
+  "homepage": "https://gregorioospina.github.io",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
