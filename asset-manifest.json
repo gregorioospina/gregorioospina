@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/gregorioospina.github.io/static/css/main.10f62441.chunk.css",
-    "main.js": "/gregorioospina.github.io/static/js/main.45de63ca.chunk.js",
-    "main.js.map": "/gregorioospina.github.io/static/js/main.45de63ca.chunk.js.map",
-    "runtime-main.js": "/gregorioospina.github.io/static/js/runtime-main.9ff344a2.js",
-    "runtime-main.js.map": "/gregorioospina.github.io/static/js/runtime-main.9ff344a2.js.map",
-    "static/js/2.fea92ef4.chunk.js": "/gregorioospina.github.io/static/js/2.fea92ef4.chunk.js",
-    "static/js/2.fea92ef4.chunk.js.map": "/gregorioospina.github.io/static/js/2.fea92ef4.chunk.js.map",
-    "index.html": "/gregorioospina.github.io/index.html",
-    "precache-manifest.ac071df074292ad99edfeedea846702c.js": "/gregorioospina.github.io/precache-manifest.ac071df074292ad99edfeedea846702c.js",
-    "service-worker.js": "/gregorioospina.github.io/service-worker.js",
-    "static/css/main.10f62441.chunk.css.map": "/gregorioospina.github.io/static/css/main.10f62441.chunk.css.map",
-    "static/js/2.fea92ef4.chunk.js.LICENSE.txt": "/gregorioospina.github.io/static/js/2.fea92ef4.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/gregorioospina.github.io/static/media/bahnschrift.a397d89c.ttf"
+    "main.css": "/my-page/static/css/main.446c6617.chunk.css",
+    "main.js": "/my-page/static/js/main.1e4397c7.chunk.js",
+    "main.js.map": "/my-page/static/js/main.1e4397c7.chunk.js.map",
+    "runtime-main.js": "/my-page/static/js/runtime-main.5cce5e8e.js",
+    "runtime-main.js.map": "/my-page/static/js/runtime-main.5cce5e8e.js.map",
+    "static/js/2.fea92ef4.chunk.js": "/my-page/static/js/2.fea92ef4.chunk.js",
+    "static/js/2.fea92ef4.chunk.js.map": "/my-page/static/js/2.fea92ef4.chunk.js.map",
+    "index.html": "/my-page/index.html",
+    "precache-manifest.ce02671d0ecce166a220e66872cf6cf2.js": "/my-page/precache-manifest.ce02671d0ecce166a220e66872cf6cf2.js",
+    "service-worker.js": "/my-page/service-worker.js",
+    "static/css/main.446c6617.chunk.css.map": "/my-page/static/css/main.446c6617.chunk.css.map",
+    "static/js/2.fea92ef4.chunk.js.LICENSE.txt": "/my-page/static/js/2.fea92ef4.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/my-page/static/media/bahnschrift.a397d89c.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.9ff344a2.js",
+    "static/js/runtime-main.5cce5e8e.js",
     "static/js/2.fea92ef4.chunk.js",
-    "static/css/main.10f62441.chunk.css",
-    "static/js/main.45de63ca.chunk.js"
+    "static/css/main.446c6617.chunk.css",
+    "static/js/main.1e4397c7.chunk.js"
   ]
 }
