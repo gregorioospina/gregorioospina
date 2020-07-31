@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/personal_page/static/css/main.b4f8e677.chunk.css",
-    "main.js": "/personal_page/static/js/main.69bf1d7a.chunk.js",
-    "main.js.map": "/personal_page/static/js/main.69bf1d7a.chunk.js.map",
-    "runtime-main.js": "/personal_page/static/js/runtime-main.68a8fed3.js",
-    "runtime-main.js.map": "/personal_page/static/js/runtime-main.68a8fed3.js.map",
-    "static/js/2.fea92ef4.chunk.js": "/personal_page/static/js/2.fea92ef4.chunk.js",
-    "static/js/2.fea92ef4.chunk.js.map": "/personal_page/static/js/2.fea92ef4.chunk.js.map",
-    "index.html": "/personal_page/index.html",
-    "precache-manifest.76d90cc5fab0dd7fa683c9523d9ed476.js": "/personal_page/precache-manifest.76d90cc5fab0dd7fa683c9523d9ed476.js",
-    "service-worker.js": "/personal_page/service-worker.js",
-    "static/css/main.b4f8e677.chunk.css.map": "/personal_page/static/css/main.b4f8e677.chunk.css.map",
-    "static/js/2.fea92ef4.chunk.js.LICENSE.txt": "/personal_page/static/js/2.fea92ef4.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/personal_page/static/media/bahnschrift.a397d89c.ttf"
+    "main.css": "/gregorioospina.github.io/static/css/main.10f62441.chunk.css",
+    "main.js": "/gregorioospina.github.io/static/js/main.45de63ca.chunk.js",
+    "main.js.map": "/gregorioospina.github.io/static/js/main.45de63ca.chunk.js.map",
+    "runtime-main.js": "/gregorioospina.github.io/static/js/runtime-main.9ff344a2.js",
+    "runtime-main.js.map": "/gregorioospina.github.io/static/js/runtime-main.9ff344a2.js.map",
+    "static/js/2.fea92ef4.chunk.js": "/gregorioospina.github.io/static/js/2.fea92ef4.chunk.js",
+    "static/js/2.fea92ef4.chunk.js.map": "/gregorioospina.github.io/static/js/2.fea92ef4.chunk.js.map",
+    "index.html": "/gregorioospina.github.io/index.html",
+    "precache-manifest.ac071df074292ad99edfeedea846702c.js": "/gregorioospina.github.io/precache-manifest.ac071df074292ad99edfeedea846702c.js",
+    "service-worker.js": "/gregorioospina.github.io/service-worker.js",
+    "static/css/main.10f62441.chunk.css.map": "/gregorioospina.github.io/static/css/main.10f62441.chunk.css.map",
+    "static/js/2.fea92ef4.chunk.js.LICENSE.txt": "/gregorioospina.github.io/static/js/2.fea92ef4.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/gregorioospina.github.io/static/media/bahnschrift.a397d89c.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.68a8fed3.js",
+    "static/js/runtime-main.9ff344a2.js",
     "static/js/2.fea92ef4.chunk.js",
-    "static/css/main.b4f8e677.chunk.css",
-    "static/js/main.69bf1d7a.chunk.js"
+    "static/css/main.10f62441.chunk.css",
+    "static/js/main.45de63ca.chunk.js"
   ]
 }
