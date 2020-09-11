@@ -69,6 +69,7 @@ const useStyles = makeStyles((theme: Theme) =>
     opacityTransformation: {
       transitionProperty: "opacity",
       transitionDuration: "0.6s",
+      opacity: 0,
       "&.active": {
         opacity: 1
       }
@@ -169,7 +170,7 @@ const Home = (props: IHome) => {
           </Grid>
         }
         <Typography align="justify" paragraph variant="subtitle1" className={`body ${about ? "active" : ""} ${classes.opacityTransformation} ${classes.aboutMeText}`}>
-          I have an avid interest in minimal, dynamic user experiences. Where the simplicity of the design, enables the functionality of the application to come forward.
+          I have an avid interest in minimal, dynamic user experiences. Where the simplicity of the design enables the functionality of the application to come forward.
         </Typography>
         <Typography align="justify" paragraph variant="subtitle1" className={`body ${about ? "active" : ""} ${classes.opacityTransformation} ${classes.aboutMeText}`}>
           Furthermore, I am a sloppy but persistent guitar player, F1 fan and quarantine-born baker.
@@ -256,14 +257,14 @@ const Home = (props: IHome) => {
             </Typography>
           </Grid>
           <Grid item>
-            <Typography noWrap className={`gre subtitle ${classes.nameTypography} ${classes.opacityTransformation}`} style={{ opacity: about || (work && fullScreen) ? "0" : "1" }}>
+            <Typography noWrap className={`notranslate gre subtitle ${classes.nameTypography} ${classes.opacityTransformation}`} style={{ opacity: about || (work && fullScreen) ? "0" : "1" }}>
               SYST
               <span onClick={handleShowEmmers}>E</span>
               MS AND COMP
             </Typography>
           </Grid>
         </Grid>
-        <Grid item xs={12} container style={{ height: about ? "95%" : "15%", overflow: "hidden", padding: 15, paddingTop: 0 }}>
+        <Grid item xs={12} container style={{ height: about ? "95%" : "15%", overflow: "hidden", padding: 15, paddingTop: 0 }} className={classes.transition}>
           <Grid item xs={12}>
             <Button variant="text" onClick={() => handleSwitch("about", () => setAbout(p => !p))}>
               <Typography className={`subtitle gre ${classes.nameTypography} ${about ? "work" : ""}`}>
@@ -276,52 +277,54 @@ const Home = (props: IHome) => {
               <KeyboardArrowDown style={{ color: SECONDARY }} />
             </IconButton>
           </Grid>
-          <Grid item xs={12} style={{ overflow: "auto", height: "90%", display: about ? "" : "none" }} className={`${about ? "active" : ""} ${classes.opacityTransformation}`}>
+          <Grid item xs={12} style={{ overflow: "auto", height: about ? "90%" : "0%" }} className={`${classes.transition} ${about ? "active" : ""} ${classes.opacityTransformation}`}>
             {renderAboutMe()}
           </Grid>
         </Grid>
-        <IconButton style={{
-          position: "absolute",
-          left: 0,
-          bottom: 0,
-          display: about ? "" : "none"
-        }} onClick={() => openInNewTab("https://github.com/gregorioospina")}>
-          <GitHub />
-        </IconButton>
-        <IconButton
-          style={{
+        <React.Fragment>
+          <IconButton style={{
             position: "absolute",
-            left: 40,
+            left: 0,
             bottom: 0,
             display: about ? "" : "none"
-          }}
-          onClick={() => openInNewTab("https://www.linkedin.com/in/gregorioospina/")}>
-          <LinkedIn />
-        </IconButton>
-        <img
-          style={{
-            cursor: "pointer",
-            position: "absolute",
-            left: 80,
-            bottom: 0,
-            padding: 8,
-            display: about ? "" : "none",
-          }} height="34" width="34" alt="gitlab" src={gitlab} onClick={() => openInNewTab("https://gitlab.com/gregorioospina")} />
+          }} onClick={() => openInNewTab("https://github.com/gregorioospina")}>
+            <GitHub />
+          </IconButton>
+          <IconButton
+            style={{
+              position: "absolute",
+              left: 40,
+              bottom: 0,
+              display: about ? "" : "none"
+            }}
+            onClick={() => openInNewTab("https://www.linkedin.com/in/gregorioospina/")}>
+            <LinkedIn />
+          </IconButton>
+          <img
+            style={{
+              cursor: "pointer",
+              position: "absolute",
+              left: 80,
+              bottom: 0,
+              padding: 8,
+              display: about ? "" : "none",
+            }} height="34" width="34" alt="gitlab" src={gitlab} onClick={() => openInNewTab("https://gitlab.com/gregorioospina")} />
+        </React.Fragment>
       </Grid>
       <Grid item container style={{ width: getWidth("work"), maxHeight: "100%", position: "relative" }} className={classes.go}>
         <Grid item xs={12} container justify="center" alignItems="flex-start" direction="column" style={{ height: work ? "5%" : "85%" }} wrap="nowrap" className={classes.transition}>
           <Grid item >
-            <Typography className={`go title ${classes.nameTypography} ${classes.opacityTransformation}`} style={{ opacity: work || (about && fullScreen) ? "0" : "1" }}>
+            <Typography className={`notranslate go title ${classes.nameTypography} ${classes.opacityTransformation}`} style={{ opacity: work || (about && fullScreen) ? "0" : "1" }}>
               GO
             </Typography>
           </Grid>
           <Grid item >
-            <Typography noWrap className={`go subtitle ${classes.nameTypography} ${classes.opacityTransformation}`} style={{ opacity: work || (about && fullScreen) ? "0" : "1" }}>
+            <Typography noWrap className={`notranslate go subtitle ${classes.nameTypography} ${classes.opacityTransformation}`} style={{ opacity: work || (about && fullScreen) ? "0" : "1" }}>
               UTING ENGINEER
         </Typography>
           </Grid>
         </Grid>
-        <Grid item xs={12} container style={{ height: work ? "95%" : "15%", overflow: "hidden", padding: 15, paddingTop: 0 }}>
+        <Grid item xs={12} container style={{ height: work ? "95%" : "15%", overflow: "hidden", padding: 15, paddingTop: 0 }} className={classes.transition}>
           <Grid item xs={12}>
             <Button variant="text" onClick={() => handleSwitch("work", () => setWork(p => !p))}>
               <Typography className={`subtitle salmon ${classes.nameTypography} ${work ? "work" : ""}`}>
@@ -334,7 +337,7 @@ const Home = (props: IHome) => {
               <KeyboardArrowDown style={{ color: ACCENTS }} />
             </IconButton>
           </Grid>
-          <Grid item xs={12} style={{ overflow: "auto", height: "90%", display: work ? "" : "none" }} className={`${work ? "active" : ""} ${classes.opacityTransformation}`}>
+          <Grid item xs={12} style={{ overflow: "auto", height: work ? "90%" : "0%" }} className={`${classes.transition} ${work ? "active" : ""} ${classes.opacityTransformation}`}>
             {renderWork()}
           </Grid>
         </Grid>
